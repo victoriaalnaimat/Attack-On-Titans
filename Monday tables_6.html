@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>freeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+background-color: dark-blue;
+background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+background-size: cover;
+color: white;
+}
+form {
+background-color: rgba(27, 27, 50, 0.8);
+}
+label {
+display: block;
+margin: 1rem 0;
+}
+input {
+text-align: left;
+width: 100%;
+}
+select {
+width: 100%;
+
+}
+.input-radio {
+display: inline-block;
+text-align: left;
+width: unset;
+}
+.input-checkbox {
+display: inline-block;
+text-align: left;
+width: unset;
+}
+  </style>
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your Name" /></label>
+      <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your Email" /></label>
+      <label id="number-label">Age (optional) <input id="number" type="number" min="1" max="120" placeholder="Age" /></label>
+      <label>Which option best describes your current role? <input id="dropdown" type="text" placeholder="Select current role" /></label>
+    </fieldset>
+      <fieldset>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+ <input name="recommend" type="radio" class="input-radio" value="definitely" />Definitely<br></label>
+      <input name="recommend" type="radio" class="input-radio" value="maybe" />Maybe<br></label>
+    <input name="recommend" type="radio" class="input-radio" value="not-sure" />Not Sure<br></label>  
+    </fieldset>
+    <fieldset>
+<label>What is your favorite feature of freeCodeCamp?
+<select id="dropdown" value="dropdown">
+  <option value="">Select an option</option>
+  <option value="1">Challenges</option>
+  <option value="2">Projects</option>
+  <option value="3">Community</option>
+  <option value="4">Open Source</option>
+</select>
+</label>
+<label>What would you like to see improved? (Check all that apply)</label>
+  <input type="checkbox" name="apply" class="input-checkbox" value="front" /> Front-End Projects<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="back" /> Back-End Projects<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="data" /> Data Visualization<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="challenges" /> Challenges<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="open" /> Open Source Community<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="gitter" /> Gitter help rooms<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="videos" /> Videos<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="city" /> City Meetups<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="wiki" /> Wiki<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="forum" /> Forum<br>
+  <input type="checkbox" name="apply" class="input-checkbox" value="courses" /> Additional Courses<br>
+</label>
+    </fieldset>
+    <fieldset>
+      <label>Any comments or suggestions?
+        <textarea name="suggestion" rows="5" cols="40" placeholder="Enter your comment here..."></textarea>
+</label>
+</fieldset>
+<input id="submit" type="submit" value="Submit">
+</form>
+</body> 
+</html>
